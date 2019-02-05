@@ -1,0 +1,114 @@
+body{
+    margin:0%;
+    padding:0%;
+    background: -webkit-linear-gradient(white,#d3d8e8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background:#3b5998;
+    color:white;
+    padding:10px;
+}
+
+#column{
+    -webkit-column-count: 2;
+}
+
+h1{
+    margin-left:30%;
+    font-family: tahoma;
+    font-size: 40px;
+}
+
+#log{
+    background: rgb(71,103,178);
+    color:white;
+    border:1px;
+}
+
+.left{
+    color: rgb(14, 14, 82);
+    font-size:17px;
+    font-weight: bold;
+    margin-left: 30px;
+    width: 400px;
+    float: left;
+    padding: 30px;
+    margin-left:100px;
+}
+
+.image{
+        width:500px;
+        height:200px;
+}
+.right{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    float:right;
+    margin-right:100px;
+}
+
+#reg{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form{
+    background: white;
+    border:1px solid white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.terms{
+    font-size:11px;
+    display: block;
+    width:300px;
+}
+
+#submit{
+    background: rgb(105, 167, 78);
+    color:white;
+    border:1px solid;
+    border-radius: 5px;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width:190px;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.lang{
+    margin-top: 90px;
+    margin-left: 150px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+
+.lang a{
+    color: royalblue;
+    font-size: 14px;
+}
+
+.bottomtext{
+    margin-left: 150px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+.bottomtext a{
+    color: royalblue;
+    font-size: 14px;
+    margin-left: 150px; 
+}
+.copyright{
+    color: gray;
+    font-size: 13px;
+    margin-left: 150px;
+    font-style: "Arial";
+}
