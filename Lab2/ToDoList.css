@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    color:rgb(168, 164, 164);
+    background:  rgb(29, 29, 29);
+    font-size:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:40px;
+    padding-left:60px;
+}
+
+.header p{
+    float: left;
+    margin-bottom:400px;
+}
+
+.main{
+    color:rgb(100, 98, 98);
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:80px;
+    padding-left: 20%;
+}
+
+#title{
+    font-size:40px;
+}
+
+#myInput{
+    font-size: 20px;
+    padding-right: 30%;
+    margin-left:8%;
+    border-radius:3px;
+}
+
+#addBtn{
+    font-size:15px;
+    color:white;
+    background: rgb(62, 80, 238);
+    border:1px solid  rgb(62, 80, 238);
+    border-radius: 3px;
+    padding:5px;
+    margin-left:3%;
+}
+
+.checks{
+    width: 20px;
+    height: 30px;
+    float: left;
+    margin-right: 50px;
+    padding:5px;
+}
+
+.mySpan{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;;
+    float: left;
+    padding: 5px;
+}
+
+.newClass{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;;
+    float: left;
+    padding: 5px;
+    text-decoration: line-through;
+}
+
+.image{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    margin-right: 20px;
+    float: right;
+}
+
+ul li{
+    list-style-type:none;
+    border: 1px solid rgb(202, 198, 198);
+    width: 850px;
+    height: 80px;   
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 10px; 
+}
