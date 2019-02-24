@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Momentum</title>
+    <link rel="stylesheet" href="./momentum.css"/>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class = "main">
+        
+        <!-- <div class = "time"> -->
+            <h1 id = "time"></h1>
+        <!-- </div> -->
+        
+        <div class = "greeting">
+            <h2>Hello, Beksultan</h2>
+        </div>
+    
+        <div class = "ask">
+            <p>What is your main focus for today?</p>
+        </div>
+    
+        <div class='todo'>
+                <input id = "myInput" type = "text"  placeholder="New Task">
+                <button type="button" id = "addBtn" onclick="newElement(event);">Add</button>
+
+                <ul id = "list">
+                </ul>
+        </div>
+    
+    
+    </div>
+    
+    <script src="main.js"></script>
+    <script>src = "todolist.js"</script>
+    
+</body>
+</html>
