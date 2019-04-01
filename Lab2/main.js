@@ -55,4 +55,4 @@ var deletes  = function(e)
 {
     var bigLi = event.target.parentNode;
     bigLi.remove();
-}
+};

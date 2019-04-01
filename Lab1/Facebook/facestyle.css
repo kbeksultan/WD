@@ -1,22 +1,27 @@
 body{
     margin:0%;
     padding:0%;
-    background: -webkit-linear-gradient(white,#d3d8e8);
+    background: -webkit-linear-gradient(white,#dfe3f1);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header{
     background:#3b5998;
     color:white;
-    padding:10px;
+    font-size:12px;
+    margin-top:-40px;
+    padding:1px;
 }
 
-#column{
+.header p{
+    color:rgb(214, 214, 214);
+    margin-left:700px;
+    margin-top:-60px;
     -webkit-column-count: 2;
 }
 
 h1{
-    margin-left:30%;
+    margin-left:150px;
     font-family: tahoma;
     font-size: 40px;
 }
@@ -34,24 +39,28 @@ h1{
     margin-left: 30px;
     width: 400px;
     float: left;
-    padding: 30px;
-    margin-left:100px;
+    padding: 20px;
+    margin-left:130px;
 }
 
-.image{
-        width:500px;
-        height:200px;
+.left img{
+    width:450px;
+    height:250px; 
 }
+
 .right{
     font-family: Arial, Helvetica, sans-serif;
-    font-size:18px;
+    font-size:17px;
     float:right;
     margin-right:100px;
 }
 
-#reg{
-    font-size: 30px;
-    font-weight: bold;
+.right h2{
+    font-size:30px;
+}
+
+#why{
+    font-size:14px;
 }
 
 .form{
@@ -82,7 +91,16 @@ h1{
     margin-top: 10px;
 }
 
-.lang{
+
+.footer{
+    margin-top:600px;
+    text-align: center;
+    font-size:14px;
+    /* width:100%;
+     */
+}
+
+/* .lang{
     margin-top: 90px;
     margin-left: 150px;
     font-size: 14px;
@@ -111,4 +129,4 @@ h1{
     font-size: 13px;
     margin-left: 150px;
     font-style: "Arial";
-}
+} */

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="D:\Users\Бексултан\Desktop\WebDev\Lab1\photos\facebook.png" type="image/x-icon">
     <title>Facebook</title>
-    <link href="D:\Users\Бексултан\Desktop\WebDev\Lab1\facestyle.css" rel="stylesheet" type="text/css">
+    <link href="D:\Users\Бексултан\Desktop\WebDev\Lab1\Facebook\facestyle.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -13,64 +13,68 @@
     
     <div class = "header" id ="column">
         <h1>facebook</h1>
-        <form action = "">
-            <label>Электронный адрес или номер телефон</label>
-            <label>Пароль</label>
-            <br>
-            <input type = "email" name = "email">
-            <input type = "password" name = "password" style="margin-left:130px;">
-            <button id="log">Вход</button>
-            <br>
-            <span style="margin-left:310px;">Забыли пароль?</span>
+        <form action = "" method="POST">
+            <p><label>Электронный адрес или номер телефон</label>
+                <br>
+                <input type = "email" name = "email">
 
+                <br>
+                <br>
+
+                <label>Пароль</label>
+                <br>
+                <input type = "password" name = "password">
+                <button id="log">Вход</button>
+                <br>
+                Забыли аккаунт?</p>
         </form>
     </div>
 
     <div class = "left">
-       <h4> Facebook помагает вам всегда оставаться на связи и общаться со своими знакомыми.</h4>
-        <img class = "image" src="D:\Users\Бексултан\Desktop\WebDev\1.jpg">
+        <h4> Facebook помагает вам всегда оставаться на связи и общаться со своими знакомыми.</h4>
+        <img src="D:\Users\Бексултан\Desktop\WebDev\Lab1\photos\1.jpg" alt = "peoples" >
     </div>
 
     <div class = "right">
-        <p id = "reg">Регистрация</p><br><br>
-        <span>Это бесплатно и всегда будет бесплатно.</span><br><br>
+        <h2>Регистрация</h2>
+            <p>Это бесплатно и всегда будет бесплатно.</p>
             <form action = "">
-            <input class = "form" type="text" autofocus placeholder="Имя">
-            <input class = "form" type="text" autofocus placeholder="Фамилия"><br><br>
-            <input class = "form" type="text" autofocus placeholder="Номер мобильного телефона или эл.адрес" style="width:365px"><br><br>
-            <input class = "form" type="password" autofocus placeholder="Новый пароль"><br><br>
-            <br><label>Дата рождения</label></br>
-        
-            <a href="" style="font-size:11px;"><input type="date"> Зачем указывать дату рождения?</a>
-            <br><br>
-            <label><input type="radio" name="gender">Женщина</label>  
-            <label><input type="radio" name="gender">Мужчина</label>
+                
+                <input class = "form" type="text" autofocus placeholder="Имя">
+                <input class = "form" type="text" autofocus placeholder="Фамилия"><br><br>
+                <input class = "form" type="text" autofocus placeholder="Номер мобильного телефона или эл.адрес" style="width:365px"><br><br>
+                <input class = "form" type="password" autofocus placeholder="Новый пароль"><br><br>
             
-            <br>
-            <br>
-            <p class="terms">
-                Нажимая кнопку Регистрация, вы принимаете <a href="">Условия, 
-                Политику использования данных и Политику в отношении файлов cookie</a>. 
-                Вы можете получать от нас SMS-уведомления, 
-                отказаться от которых можно в любой момент.
-                </p>
-            <button id="submit">Регистрация</button></br>
-            <span style="font-size: 13px;font-family:Arial, Helvetica, sans-serif"><a href = "#" >Создать страницу</a> знаменитости,музыкальной группы или компании</span>
+                <br><label>Дата рождения</label></br>
+        
+                <a href="#" id = "why"><input type="date"> Зачем указывать дату рождения?</a><br><br>
+                <label><input type="radio" name="gender">Женщина</label>  
+                <label><input type="radio" name="gender">Мужчина</label><br><br>
+
+                <p class="terms">
+                    Нажимая кнопку Регистрация, вы принимаете <a href="">Условия, 
+                    Политику использования данных и Политику в отношении файлов cookie</a>. 
+                    Вы можете получать от нас SMS-уведомления, 
+                    отказаться от которых можно в любой момент.</p>
+
+                <button id="submit">Регистрация</button></br>
+                <p><a href = "#" ><strong>Создать страницу</strong></a> знаменитости,музыкальной группы или компании</p>
         </form>
     </div>
     
-    <!-- <div class="lang"> Русский &nbsp;&nbsp;&nbsp;<a href="#">English(US) &nbsp;&nbsp;&nbsp; Türkçe &nbsp;&nbsp;&nbsp; Bahasa &nbsp;&nbsp;&nbsp; Indonesia &nbsp;&nbsp;&nbsp; 中文(简体)&nbsp;&nbsp;&nbsp; Қазақша &nbsp;&nbsp;&nbsp; Deutsch &nbsp;&nbsp;&nbsp; 한국어 &nbsp;&nbsp;&nbsp; Shqip &nbsp;&nbsp;&nbsp; Español &nbsp;&nbsp;&nbsp;  Português (Brasil) &nbsp;&nbsp;&nbsp;</a> </div>   -->
-    
-    <!-- <div class="bottomtext"><a href="#"><br>Регистрация &nbsp;&nbsp;&nbsp;&nbsp;
-        Вход &nbsp;&nbsp;&nbsp;&nbsp; Messenger &nbsp;&nbsp;&nbsp;&nbsp; Facebook Lite &nbsp;&nbsp;&nbsp;&nbsp; Мобильное устройство &nbsp;&nbsp;&nbsp;&nbsp; Найти друзей &nbsp;&nbsp;&nbsp;&nbsp;
-        Люди &nbsp;&nbsp;&nbsp;&nbsp; Профили &nbsp;&nbsp;&nbsp;&nbsp; Страницы &nbsp;&nbsp;&nbsp;&nbsp; Категории &nbsp;&nbsp;&nbsp;&nbsp;
-        Страниц &nbsp;&nbsp;&nbsp;&nbsp; Места &nbsp;&nbsp;&nbsp;&nbsp; Игры &nbsp;&nbsp;&nbsp;&nbsp; Места &nbsp;&nbsp;&nbsp;&nbsp; Marketplace &nbsp;&nbsp;&nbsp;&nbsp;
-        Группы &nbsp;&nbsp;&nbsp;&nbsp; Instagram &nbsp;&nbsp;&nbsp;&nbsp; Местные &nbsp;&nbsp;&nbsp;&nbsp; Благотворительные акции &nbsp;&nbsp;&nbsp;&nbsp;
-        О нас &nbsp;&nbsp;&nbsp;&nbsp; Создать рекламу &nbsp;&nbsp;&nbsp;&nbsp; Создать Страницу &nbsp;&nbsp;&nbsp;&nbsp; Разработчикам &nbsp;&nbsp;&nbsp;&nbsp;
-        Вакансии &nbsp;&nbsp;&nbsp;&nbsp;Конфиденциальность &nbsp;&nbsp;&nbsp;&nbsp;Файлы cookie &nbsp;&nbsp;&nbsp;&nbsp; Выбор рекламы &nbsp;&nbsp;&nbsp;&nbsp;
-        Условия использования &nbsp;&nbsp;&nbsp;&nbsp; Безопастность аккаунта &nbsp;&nbsp;&nbsp;&nbsp; Помощь при входе &nbsp;&nbsp;&nbsp;&nbsp; Справка &nbsp;&nbsp;&nbsp;&nbsp;
-    </a></div> -->
-  
-    <!-- <p class="copyright"><br> <br> <br>Facebook © 2019</p> --> 
+    <div class = "footer">
+        <a href="">Руский</a>
+        <a href="">English (US)</a>
+        <a href="">Türkçe</a>
+        <a href="">Bahasa Indonesia</a>
+        <a href="">中文(简体)</a>
+        <a href="">Қазақша</a>
+        <a href="">Deutsch</a>
+        <a href="">한국어</a>
+        <a href="">Shqip</a>
+        <a href="">Español</a>
+        <a href="">Português (Brasil)</a>
+    </div>
+
 </body>
 </html>
