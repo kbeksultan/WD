@@ -1,31 +1,27 @@
-from django.http import JsonResponse
-from api.models import TaskList
+from django.shortcuts import render
+from django.http import HttpResponse,JsonResponse
+from .models import TaskList
 
 
-def task_lists(request):
-    t_lists = TaskList.objects.all()
+def tasklist_list(request):
+    task_lists = TaskList.objects.all()
+    json_tasklists = [t.to_json() for t in task_lists]
+    return JsonResponse(json_tasklists, safe=False)
 
-    json_data = [task_list.to_json() for task_list in t_lists]
-
-    return JsonResponse(json_data, safe=False)
-
-
-def task_list(request, pk):
+def tasklist_detail(request, pk):
     try:
-        t_list = TaskList.objects.get(id=pk)
+        tasklist = TaskList.objects.get(id=pk)
     except TaskList.DoesNotExist as e:
-        return JsonResponse({'error': e})
+        return JsonResponse({'error': str(e)})
 
-    return JsonResponse(t_list.to_json())
+    return JsonResponse(tasklist.to_json())
 
-
-def tasks(request, pk):
+def tasklist_tasks(request, pk):
     try:
-        t_list = TaskList.objects.get(id=pk)
+        tasklist = TaskList.objects.get(id=pk)
     except TaskList.DoesNotExist as e:
-        return JsonResponse({'error': e})
+        return JsonResponse({'error': str(e)})
 
-    tasks = t_list.task_set.all()
-    json_data = [task.to_json() for task in tasks]
-
-    return JsonResponse(json_data, safe=False)
+    tasks = tasklist.task_set.all()
+    json_tasks = [t.to_json() for t in tasks]
+    return JsonResponse(json_tasks,safe=False)

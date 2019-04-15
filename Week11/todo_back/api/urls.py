@@ -1,8 +1,8 @@
 from django.urls import path
-from api import views
+from . import views
 
 urlpatterns = [
-    path('task_lists/', views.task_lists),
-    path('task_lists/<int:pk>/', views.task_list),
-    path('task_lists/<int:pk>/tasks/', views.tasks)
+    path('tasklists/',views.tasklist_list),
+    path('tasklists/<int:pk>/', views.tasklist_detail),
+    path('tasklists/<int:pk>/tasks/', views.tasklist_tasks)
 ]
