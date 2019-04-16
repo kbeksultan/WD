@@ -6,6 +6,7 @@ import { ITaskList, ITasks } from '../models/models';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProviderService extends TasklistService{
 
   constructor(http:HttpClient){
@@ -13,7 +14,7 @@ export class ProviderService extends TasklistService{
   }
 
   getTaskList():Promise<ITaskList[]>{
-     return this.get('http://127.0.0.1:8000/api/tasklists/', {});
+    return this.get('http://127.0.0.1:8000/api/tasklists/', {});
   }
 
   getTasks(tasklist: ITaskList): Promise<ITasks[]> {
