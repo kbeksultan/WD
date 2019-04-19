@@ -1,5 +1,5 @@
-from  rest_framework import serializers
-from .models import TaskList,Task
+from rest_framework import serializers
+from .models import TaskList
 
 
 class TaskListSerializer(serializers.Serializer):
@@ -7,8 +7,6 @@ class TaskListSerializer(serializers.Serializer):
     name = serializers.CharField(required=True)
 
     def create(self, validated_data):
-        # {'name': 'new category 4'}
-        # name='new category 4'
         tasklist = TaskList(**validated_data)
         tasklist.save()
         return tasklist
@@ -35,4 +33,4 @@ class TaskSerializer(serializers.Serializer):
     created_at = serializers.DateTimeField()
     due_on = serializers.DateTimeField()
     status = serializers.CharField()
-    tasklist = TaskListSerializer()
+    task_list = TaskListSerializer()

@@ -1,11 +1,9 @@
-/* 
-.tasklists{
-    border: 1px solid red;
-    height: 200px;
+
+.content{
+    margin-top: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.tasks{
-    height: 200px;
-
-    border: 2px solid blue;
-} */
