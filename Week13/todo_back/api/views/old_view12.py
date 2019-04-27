@@ -1,8 +1,8 @@
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from .models import TaskList
-from .serializers import TaskListSerializer,TaskSerializer,TaskListSerializer2
+from api.models import TaskList
+from api.serializers import TaskListSerializer,TaskSerializer,TaskListSerializer2
 
 
 @csrf_exempt
