@@ -11,3 +11,7 @@ export interface ITaskList{
     id: number;
     name: string;
 }
+
+export interface IAuthResponse{
+    token:string;
+}

@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ClassProvider } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProviderService } from './shared/services/provider.service';
 import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { AuthInterceptor } from './AuthInterceptor';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,12 @@ import { HeaderComponent } from './header/header.component';
     FormsModule
   ],
   providers: [
-    ProviderService
+    ProviderService,
+    <ClassProvider> {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

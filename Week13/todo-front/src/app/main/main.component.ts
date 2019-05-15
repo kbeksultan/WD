@@ -12,16 +12,29 @@ export class MainComponent implements OnInit {
   public tasklists: ITaskList[]= [];
   public tasks: ITasks[] = [];
   public name: any = '';
+
+  public logged = false;
+  public login: any = '';
+  public password:any = '';
+
   constructor(private provider:ProviderService) { }
 
 
   ngOnInit() {
-    this.provider.getTaskList().then(res=>{
-      console.log(res);
 
-      this.tasklists = res;
-    });
+    const token = localStorage.getItem('token');
+    if(token){
+      this.logged = true;
+    }
 
+    if(this.logged){
+
+      this.provider.getTaskList().then(res=>{
+        console.log(res);
+
+        this.tasklists = res;
+      });
+    }
   }
 
 
@@ -57,5 +70,28 @@ export class MainComponent implements OnInit {
     }
   }
 
+  auth(){
+    if(this.login !== '' && this.password !== ''){
+      this.provider.auth(this.login,this.password).then(res =>{
+        localStorage.setItem('token',res.token);
+
+        this.logged = true;
+
+        this.provider.getTaskList().then(r=>{
+          console.log(r);
   
+          this.tasklists = r;
+        });
+      });
+
+      
+    }
+  }
+
+  logout(){
+    this.provider.logout().then(res=>{
+      localStorage.clear();
+      this.logged = false;
+    });
+  }
 }

@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class TaskListManager(models.Manager):
     def for_user(self,user):
-        self.filter(created_by = user)
+        return self.filter(created_by = user).order_by('name')
 
 class TaskList(models.Model):
     name = models.CharField(max_length=255)
